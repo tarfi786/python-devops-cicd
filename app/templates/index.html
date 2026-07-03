@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{{% extends "base.html" %}
 
 {% block title %}Home | Tarfi Ansari{% endblock %}
 
@@ -82,46 +82,44 @@
 </section>
 
 <!-- ================= FEATURED ================= -->
+<h2 class="section-title">Featured Work</h2>
 
-<section>
+<div class="grid">
 
-    <h2 class="section-title">Featured Work</h2>
+    <div class="project-card">
 
-    <div class="grid">
+        <div class="project-content">
 
-        <div class="project-card">
+            <h3>AWS EC2 Deployment</h3>
 
-            <div class="project-image"></div>
-
-            <div class="project-content">
-
-                <h3>AWS EC2 Deployment</h3>
-
-                <p>Deployed Flask app on AWS EC2 with EBS storage and Linux configuration.</p>
-
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <div class="project-image"></div>
-
-            <div class="project-content">
-
-                <h3>CI/CD Pipeline</h3>
-
-                <p>Automated deployment using GitHub Actions and Docker containers.</p>
-
-            </div>
+            <p>
+                Deployed a Flask-based web application on AWS EC2 instance using Ubuntu Linux.
+                Configured server environment, managed dependencies, and handled application runtime setup.
+                Gained understanding of cloud deployment fundamentals and basic infrastructure management.
+            </p>
 
         </div>
 
     </div>
 
+    <div class="project-card">
+
+        <div class="project-content">
+
+            <h3>CI/CD Pipeline (GitHub Actions)</h3>
+
+            <p>
+                Built a basic CI pipeline using GitHub Actions to automate build and integration steps.
+                Implemented workflow triggers on code push and ensured application validation through automated steps.
+                Developed understanding of continuous integration and deployment workflow structure.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
 </section>
 
 {% endblock %}
-    
-    
-
