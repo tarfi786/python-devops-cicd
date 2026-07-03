@@ -1,22 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python DevOps CI/CD Project</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+{% block title %}Home | Tarfi Ansari{% endblock %}
 
-<body>
+{% block content %}
 
-    <h1>🚀 Python DevOps CI/CD Project</h1>
+<section class="hero">
 
-    <p>
-        This application is part of my Cloud & DevOps learning journey.
-    </p>
+    <!-- LEFT SIDE -->
+    <div class="hero-content">
 
-    <a href="/about">About</a>
+        <h3 class="tagline">Cloud & DevOps Engineer</h3>
 
-</body>
-</html>
+        <h1 class="hero-title">
+            Building Scalable Cloud Infrastructure
+        </h1>
+
+        <p class="hero-desc">
+            I design, deploy, and automate cloud-native applications using
+            AWS, Docker, Kubernetes, Terraform, and CI/CD pipelines.
+            Focused on reliability, scalability, and automation in modern DevOps workflows.
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="btn-group">
+
+            <a href="#" class="btn primary-btn">
+                📄 Download Resume
+            </a>
+
+            <a href="/projects" class="btn secondary-btn">
+                🚀 View Projects
+            </a>
+
+            <a href="https://github.com/" target="_blank" class="btn secondary-btn">
+                💻 GitHub
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank" class="btn secondary-btn">
+                💼 LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (IMAGE) -->
+    <div class="hero-image">
+
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+             alt="Profile Picture">
+
+    </div>
+
+</section>
+
+<!-- ================= QUICK HIGHLIGHTS ================= -->
+
+<section>
+
+    <h2 class="section-title">What I Do</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>☁ Cloud Engineering</h3>
+            <p>AWS EC2, S3, IAM, VPC, EBS and scalable cloud architectures.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚙ DevOps Automation</h3>
+            <p>CI/CD pipelines using GitHub Actions, Docker, and automation tools.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐳 Containerization</h3>
+            <p>Docker-based deployments for consistent and portable applications.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURED ================= -->
+
+<section>
+
+    <h2 class="section-title">Featured Work</h2>
+
+    <div class="grid">
+
+        <div class="project-card">
+
+            <div class="project-image"></div>
+
+            <div class="project-content">
+
+                <h3>AWS EC2 Deployment</h3>
+
+                <p>Deployed Flask app on AWS EC2 with EBS storage and Linux configuration.</p>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-image"></div>
+
+            <div class="project-content">
+
+                <h3>CI/CD Pipeline</h3>
+
+                <p>Automated deployment using GitHub Actions and Docker containers.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+    
+    
+

@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Tarfi Ansari{% endblock %}
+
+{% block content %}
+
+<section>
+
+    <h1 class="section-title">Featured Projects</h1>
+
+    <div class="grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+
+            <div class="project-content">
+
+                <h3>AWS EC2 Deployment & EBS Management</h3>
+
+                <p>
+                    Deployed a Flask application on AWS EC2 instance.
+                    Configured EBS volumes, mounted storage, and created snapshots
+                    for backup and recovery.
+                </p>
+
+                <p><strong>Technologies:</strong> AWS, EC2, EBS, Linux</p>
+
+                <a href="https://github.com/YOUR-USERNAME/aws-ec2-project"
+                   target="_blank"
+                   class="btn primary-btn">
+                    View on GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+
+            <div class="project-content">
+
+                <h3>CI/CD Pipeline Automation</h3>
+
+                <p>
+                    Built CI/CD pipeline using GitHub Actions and Docker for
+                    automated build, test, and deployment to AWS EC2.
+                </p>
+
+                <p><strong>Technologies:</strong> GitHub Actions, Docker, AWS</p>
+
+                <a href="https://github.com/YOUR-USERNAME/cicd-project"
+                   target="_blank"
+                   class="btn primary-btn">
+                    View on GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+
+            <div class="project-content">
+
+                <h3>VM Failure Prediction (Kubernetes)</h3>
+
+                <p>
+                    Machine learning-based system to predict VM failures using
+                    CPU, memory, disk, and network metrics in Kubernetes.
+                </p>
+
+                <p><strong>Technologies:</strong> Python, Kubernetes, ML</p>
+
+                <a href="https://github.com/YOUR-USERNAME/vm-failure-project"
+                   target="_blank"
+                   class="btn primary-btn">
+                    View on GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+
+            <div class="project-content">
+
+                <h3>DevOps Portfolio Website</h3>
+
+                <p>
+                    Personal portfolio built using Flask, HTML, and CSS
+                    to showcase DevOps projects and skills.
+                </p>
+
+                <p><strong>Technologies:</strong> Flask, HTML, CSS</p>
+
+                <a href="https://github.com/YOUR-USERNAME/portfolio"
+                   target="_blank"
+                   class="btn primary-btn">
+                    View on GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}                        
